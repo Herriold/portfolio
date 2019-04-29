@@ -12,8 +12,8 @@ class Routes extends PureComponent {
     render() {
         const store = this.props.store;
         return (
-            <Router history={this.props.history}>
-                <Route path="/" component={App}>
+            <Router history={this.props.history} >
+                <Route path="/"/*{process.env.PUBLIC_URL}*/ component={App}>
                     <IndexRoute component={Home}/>
                     <Route onEnter={onEnterChats(store)}>
                         <Route path="/chat" component={chat}/>

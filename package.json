@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://weby601.github.io/services",
+  "homepage": "https://herriold.github.io/portfolio/",
   "dependencies": {
     "@date-io/moment": "^1.1.0",
     "@material-ui/codemod": "^1.1.0",
@@ -37,7 +37,9 @@
     "redux-form": "^7.4.2",
     "redux-form-material-ui": "^5.0.0-beta.3",
     "redux-thunk": "^2.3.0",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,7 +47,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "gulp": "gulp -r gulpfile.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -57,6 +60,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "gulp-sass": "^3.2.1",
+    "node-sass": "^4.12.0"
   }
 }

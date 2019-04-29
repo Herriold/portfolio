@@ -28,17 +28,18 @@ class RootMenu extends PureComponent {
         return (
             <Fragment>
                 <Divider/>
-                <List>
+                {/* <List>
                     <div>
                         <MenuIconAndText label="User here" upper icon={User}/>
                     </div>
                 </List>
-                <Divider/>
+                <Divider/> */}
                 <List>
                     <div>
-                        <MenuIconAndText label="MA FORMATION" icon={FormationIcon} onClick={showChat}/>
-                        <MenuIconAndText label="MES ACTIONS" icon={MesActions}/>
-                        <MenuIconAndText label="MES CONNECTIONS" icon={MesConnections} />
+                        <MenuIconAndText label="DETAILS" icon={MesActions}/>
+                        <MenuIconAndText label="FORMATION" icon={FormationIcon} onClick={showChat}/>
+                        <MenuIconAndText label="DEVIS" icon={MesActions}/>
+                        <MenuIconAndText label="CONTACT" icon={MesConnections} />
                     </div>
                 </List>
                 <Divider/>

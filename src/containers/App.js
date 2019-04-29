@@ -13,13 +13,14 @@ class App extends PureComponent {
         const { children } = this.props;
 
         return (
-            <CustomThemeProvider>
-                <Roots>{children}</Roots>
-            </CustomThemeProvider>
+            <div>{children}</div>
+            // <CustomThemeProvider>
+            //     <Roots>{children}</Roots>
+            // </CustomThemeProvider>
         );
     }
 }
 
-App = withStyles(styles)(App);
+// App = withStyles(styles)(App);
 
 export default App;
